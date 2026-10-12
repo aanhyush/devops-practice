@@ -8,3 +8,7 @@ My first Git repository.
 - Docker
 - AWS automation
 - Monitoring with Datadog
+
+## Monitoring
+- Track application health using Datadog.
+- Investigate alerts and troubleshoot incidents.
