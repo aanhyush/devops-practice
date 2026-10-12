@@ -7,3 +7,4 @@ My first Git repository.
 - CI/CD pipelines
 - Docker
 - AWS automation
+- Monitoring with Datadog

@@ -1,0 +1,12 @@
+# Environment variables and secrets
+.env
+.env.*
+
+# Python cache
+__pycache__/
+
+# Dependency folders
+node_modules/
+
+# Log files
+*.log
