@@ -12,3 +12,5 @@ My first Git repository.
 ## Monitoring
 - Track application health using Datadog.
 - Investigate alerts and troubleshoot incidents.
+
+Day 4: Practicing Git collaboration and remote updates.
