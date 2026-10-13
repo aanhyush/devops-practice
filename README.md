@@ -14,3 +14,8 @@ My first Git repository.
 - Investigate alerts and troubleshoot incidents.
 
 Day 4: Practicing Git collaboration and remote updates.
+
+## Git Collaboration Practice
+- Clone repositories from GitHub.
+- Pull updates from the remote repository.
+- Push local commits to GitHub.
