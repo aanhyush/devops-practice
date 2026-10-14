@@ -1,0 +1,30 @@
+
+name: DevOps Practice CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify CI/CD notes exist
+        run: test -f ci-cd-notes.md
+
+      - name: Check required topics
+        run: |
+          grep -qi "continuous integration" ci-cd-notes.md
+          grep -qi "continuous delivery" ci-cd-notes.md
+
+      - name: Report success
+        run: echo "CI checks passed."
