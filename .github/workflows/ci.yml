@@ -28,3 +28,15 @@ jobs:
 
       - name: Report success
         run: echo "CI checks passed."
+        
+      - name: Verify demo secret is configured
+        env:
+          DEMO_SECRET: ${{ secrets.DEMO_SECRET }}
+        run: |
+          if [ -n "$DEMO_SECRET" ]; then
+            echo "Demo secret is configured."
+          else
+            echo "Demo secret is missing."
+            exit 1
+          fi
+
